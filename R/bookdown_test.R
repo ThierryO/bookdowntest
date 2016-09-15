@@ -1,6 +1,7 @@
 #' A test style for bookdown
 #' @importFrom rmarkdown output_format knitr_options pandoc_options
 #' @export
+#' @param ... additionol options
 bookdown_test <- function(...){
   template <- system.file("pandoc/bookdown_test.tex", package = "bookdowntest")
   args <- c(

@@ -4,7 +4,8 @@ Title: A Reprodicible Example of Xelatex Error
 Version: 0.1.0
 Author: Thierry Onkelinx
 Maintainer: Thierry Onkelinx <thierry.onkelinx@inbo.be>
-License: GPL 3
+Description: Highlight a problem that bookdown seems to use pdflatex instead of xelatex.
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 5.0.1

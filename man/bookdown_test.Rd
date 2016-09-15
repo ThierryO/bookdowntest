@@ -6,6 +6,9 @@
 \usage{
 bookdown_test(...)
 }
+\arguments{
+\item{...}{additionol options}
+}
 \description{
 A test style for bookdown
 }
