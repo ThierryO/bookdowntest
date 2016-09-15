@@ -3,13 +3,12 @@ title: "Bookdown test"
 author: "Thierry Onkelinx"
 date: '`r Sys.Date()`'
 output:
-  bookdowntest::bookdown_test: default
+  bookdowntest::my_book: default
   bookdown::pdf_book:
     base_format: bookdowntest::bookdown_test
-vignette: |
-  %\VignetteIndexEntry{Bookdown test}
-  %\VignetteEngine{knitr::rmarkdown} 
-  %\VignetteEncoding{UTF-8}
+  bookdowntest::bookdown_test: default
+vignette: "%\\VignetteIndexEntry{Bookdown test}\n%\\VignetteEngine{knitr::rmarkdown}
+  \n%\\VignetteEncoding{UTF-8}\n"
 ---
 
 Vignettes are long form documentation commonly included in packages. Because they are part of the distribution of the package, they need to be as compact as possible. The `html_vignette` output type provides a custom style sheet (and tweaks some options) to ensure that the resulting html is as small as possible. The `html_vignette` format:
