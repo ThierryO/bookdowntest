@@ -3,10 +3,10 @@ title: "Bookdown test"
 author: "Thierry Onkelinx"
 date: '`r Sys.Date()`'
 output:
-  bookdowntest::my_book: default
   bookdown::pdf_book:
     base_format: bookdowntest::bookdown_test
   bookdowntest::bookdown_test: default
+  bookdowntest::my_book: default
 vignette: "%\\VignetteIndexEntry{Bookdown test}\n%\\VignetteEngine{knitr::rmarkdown}
   \n%\\VignetteEncoding{UTF-8}\n"
 ---

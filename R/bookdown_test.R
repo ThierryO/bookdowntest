@@ -5,8 +5,7 @@
 bookdown_test <- function(...){
   template <- system.file("pandoc/bookdown_test.tex", package = "bookdowntest")
   args <- c(
-    "--template", template,
-    "--latex-engine", "xelatex"
+    "--template", template
   )
   opts_chunk <- list(
     dev = 'pdf',
@@ -25,6 +24,7 @@ bookdown_test <- function(...){
     pandoc = pandoc_options(
       to = "latex",
       args = args,
+      latex_engine = "xelatex",
       keep_tex = TRUE
     ),
     clean_supporting = FALSE
