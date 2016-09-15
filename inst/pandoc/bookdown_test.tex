@@ -1,0 +1,28 @@
+\documentclass{article}
+
+\usepackage{ifxetex}
+
+\ifxetex
+  \usepackage[no-math]{fontspec}
+  \setmainfont[Ligatures=TeX]{miama.otf}
+  \setmonofont{Inconsolatazi4}[Scale=MatchLowercase]
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+\fi
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\title{$title$}
+\author{$author$}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+$body$
+
+\end{document}
